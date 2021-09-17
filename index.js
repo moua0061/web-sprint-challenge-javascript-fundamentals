@@ -16,7 +16,7 @@ function myFunction() {
 myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
-The variable 'internal' is the closure of the function scope of myFunction, where it can reach into myFunction to grab a value defined in another function. 
+// The variable 'internal' is the closure of the function scope of myFunction, where it can reach into myFunction to grab a value defined in another function. 
 
 
 
@@ -28,11 +28,14 @@ The variable 'internal' is the closure of the function scope of myFunction, wher
     
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
-function summation(/*Your Code Here*/) {
+function summation(num) {
   /*Your Code Here*/
-
-  }
- 
+  let total = 0;
+  for (let i = 1; i <= num; i++){  
+    total = i + total;
+  } return total;
+}
+console.log(summation(10));
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
 // Given this zoo data from around the United States, follow the instructions below. Use the specific array methods in the requests below to solve the problems.
