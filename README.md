@@ -25,6 +25,9 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read.
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
+    a).map() returns a new array of elements where you use a function to change the original element's value inside of it. It's used for reshaping or manipulating data. For an example, you have a data set of all the NFL super bowl games, winners, scores, teams, etc. If you want to be find the teams who played at the Super Bowl from the past to the current, you would use .map() to map through the data looking for only the teams' names and the years. 
+    b) .filter() returns a new array of elements where it is a 'truth' test, filtering specific conditions of that array. From the example above, you want to find the winners from those years, you would filter from that using .filter() with an if statement that if team 1 final score > team 2 final score, return the name of the team else, return name of team 2.
+    c) .reduce() returns a new array of elements where you want to add them all up from the first element to the last. Taken from the example from above, you want to find the average scores of all superbowl games, you would use .reduce(), which it will add all the final scores and divide it by the total amount of games played.
 
 2. Explain the difference between a callback and a higher order function.
 
