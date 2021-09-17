@@ -166,11 +166,15 @@ function CuboidMaker(object){
   this.width = object.width,
   this.height = object.height
 }
-
+const cubiod = new CuboidMaker(6, 2, 10);
+console.log(cubiod);
 
 /* 🐴🐴🐴 Step 2: Volume Method 🐴🐴🐴
   Create a method called volume using CuboidMaker's prototype that returns the volume of a given cuboid's length, width, and height
   Formula for cuboid volume: length * width * height   */
+  CuboidMaker.prototype.volume = function(){
+    this.length * this.width * this.height;
+  }
 
 
 
