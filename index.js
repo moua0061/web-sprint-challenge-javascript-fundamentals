@@ -16,7 +16,7 @@ function myFunction() {
 myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
-
+The variable 'internal' is the closure of the function scope of myFunction, where it can reach into myFunction to grab a value defined in another function. 
 
 
 
