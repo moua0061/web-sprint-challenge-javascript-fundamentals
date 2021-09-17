@@ -42,7 +42,7 @@ Edit this document to include your answers after each question. Make sure to lea
     d) Explicit binding: whenver we use a .call(), .applly(), or .bind() method, 'this' is explicitly defined.
 
 5. Why do we need super() in an extended class?
-    We need super() in an extended class because 
+    We need super() in an extended class because it needs to beb called from within the constructor function to pass any new attributes back to the constructor of the parent object.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
