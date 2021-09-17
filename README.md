@@ -30,12 +30,19 @@ Edit this document to include your answers after each question. Make sure to lea
     c) .reduce() returns a new array of elements where you want to add them all up from the first element to the last. Taken from the example from above, you want to find the average scores of all superbowl games, you would use .reduce(), which it will add all the final scores and divide it by the total amount of games played.
 
 2. Explain the difference between a callback and a higher order function.
+    A callback is a function passed as an argument to another function where it allows that function to call another function. Higher Order Function (HOF) are functions that operate on other functions either as parameters or returning them. 
 
 3. Explain what a closure is.
+    Closure is a combination of a function and the lexical environment within which that function was declared. When a function is declared and created, a new scope is created called a functional scope. The variables or functions declared within that function have the ability to reach outward for context but never inward. This will remain true no matter how deep you nest functions.
 
 4. Describe the four principles of the 'this' keyword.
+    a) Window/Global binding: when in the global scope, the value of 'this' will be in the console object. It will display everything in the global scope.
+    b) Implict binding: whenever a poceeding dot calls a function, the object before the dot (to the left) is 'this'. 
+    c) New binding: whenever we use a constructor function, 'this' refers to the specific instance of the object that is created and returned by the constructor function.
+    d) Explicit binding: whenver we use a .call(), .applly(), or .bind() method, 'this' is explicitly defined.
 
 5. Why do we need super() in an extended class?
+    We need super() in an extended class because 
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
