@@ -87,10 +87,14 @@ const zooAnimals = [
   Using lowPopulationAnimals use .filter() to create a new array of objects which contains only the animals with a population of less than 5.
   */
 
-  function lowPopulationAnimals(/*Your Code Here*/){
+  function lowPopulationAnimals(array3){
     /*Your Code Here*/
+    const newPopulation = array3.filter(array3 => array3.population < 5)
+    //if population is less than 5, return new array of objects
+    //.filter is based on something that could be true or false
+    return newPopulation;
   }
-  
+  console.log(lowPopulationAnimals(zooAnimals));
 
   /* 🦁🦁🦁 Request 4: .reduce() 🦁🦁🦁
   The zoo needs to know their total animal population across the United States. 
